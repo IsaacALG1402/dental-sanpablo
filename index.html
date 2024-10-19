@@ -50,6 +50,42 @@
                 margin-bottom: 15px;
             }
         }
+        
+        /* Estilos para la burbuja de WhatsApp */
+        .float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+
+        .my-float {
+            margin-top: 16px;
+        }
+
+        /* Estilos para la burbuja de Messenger */
+        .float-messenger {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 120px;
+            right: 40px;
+            background-color: #0084ff;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
     </style>
 </head>
 <body>
@@ -150,7 +186,7 @@
     <!-- Contact -->
     <div id="contact" class="container text-center mt-5">
         <h2>Contacto</h2>
-        <p>Teléfono: 123-456-7890</p>
+        <p>Teléfono: 5578387776</p>
         <p>Email: contacto@dental-sanpablo.com</p>
         <a href="https://wa.me/5578387776" class="btn whatsapp-button btn-lg mt-3"><i class="fab fa-whatsapp"></i> Contactar por WhatsApp</a>
     </div>
@@ -165,19 +201,24 @@
 
     <!-- Footer -->
     <footer class="text-center mt-5">
-        <div class="container">
-            <div class="social-icons mb-3">
-                <a href="https://www.facebook.com/SanPabloDentista" target="_blank"><i class="fab fa-facebook"></i></a>
-            </div>
-            <p>© 2024 Dental San Pablo. Todos los derechos reservados.</p>
-        </div>
+        <p>© 2024 Dental San Pablo. Todos los derechos reservados.</p>
+        <a href="https://www.facebook.com/SanPabloDentista" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/SanPabloDentista" target="_blank"><i class="fab fa-instagram"></i></a>
     </footer>
 
-    <!-- Bootstrap JS and dependencies -->
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/5578387776" class="float" target="_blank">
+        <i class="fab fa-whatsapp my-float"></i>
+    </a>
+
+    <!-- Botón flotante de Messenger -->
+    <a href="https://m.me/SanPabloDentista" class="float-messenger" target="_blank">
+        <i class="fab fa-facebook-messenger my-float"></i>
+    </a>
+
+    <!-- Bootstrap JS y dependencias -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Font Awesome JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 </body>
 </html>
