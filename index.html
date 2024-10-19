@@ -16,8 +16,9 @@
             background-color: #007BFF;
         }
         .carousel-inner img {
-            height: 300px; /* Ajuste de altura del carrusel */
-            object-fit: cover;
+            height: 500px; /* Aumentar altura del carrusel */
+            object-fit: cover; /* Ajustar para que las imágenes cubran el espacio */
+            object-position: center; /* Centrar la imagen */
         }
         .card {
             border: none;
@@ -44,7 +45,7 @@
         }
         @media (max-width: 768px) {
             .carousel-inner img {
-                height: 200px; /* Ajuste para pantallas pequeñas */
+                height: 300px; /* Ajuste para pantallas pequeñas */
             }
             .card {
                 margin-bottom: 15px;
@@ -191,17 +192,8 @@
         <a href="https://wa.me/5215579501249" class="btn whatsapp-button btn-lg mt-3"><i class="fab fa-whatsapp"></i> Contactar por WhatsApp</a>
     </div>
 
-    <!-- Google Maps -->
-    <div class="container mt-5">
-        <h2 class="text-center mb-4">Ubicación</h2>
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCNfuBLZd2MFsLzTaasqUzI3qEUdQqlUQg&q=Carlos+Tejeda+No+15,+Ciudad+de+México" allowfullscreen></iframe>
-        </div>
-    </div>
-
     <!-- Footer -->
     <footer class="text-center mt-5">
-        <p>© 2023 Dental San Pablo. Todos los derechos reservados.</p>
         <div>
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
