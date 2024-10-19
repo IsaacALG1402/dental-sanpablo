@@ -87,6 +87,13 @@
             box-shadow: 2px 2px 3px #999;
             z-index: 100;
         }
+
+        /* Estilos para el mapa */
+        #map {
+            height: 400px; /* Altura del mapa */
+            width: 100%; /* Ancho completo */
+            margin-bottom: 20px; /* Espacio inferior */
+        }
     </style>
 </head>
 <body>
@@ -184,12 +191,28 @@
         </div>
     </div>
 
+    <!-- Mapa -->
+    <div class="container text-center mt-5">
+        <h2>Ubicación</h2>
+        <p>Aquí puedes encontrarnos:</p>
+        <div id="map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.020787037001!2d-99.20738748523634!3d19.421339486859482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fce9c182d3bd%3A0xe7e36f7a0cf6b0d6!2sCarlos%20Tejeda%2079%2C%20Lomas%20de%20Cort%C3%A9s%2C%20Naucalpan%2C%20Estado%20de%20M%C3%A9xico%2C%20C.P.%2055270!5e0!3m2!1ses-419!2smx!4v1690992127855!5m2!1ses-419!2smx" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+
     <!-- Contact -->
     <div id="contact" class="container text-center mt-5">
-        <h2>Contacto</h2>
-        <p>Teléfono: +52 1 55 7950 1249</p>
-        <p>Email: cd.mora.unam@gmail.com</p>
-        <a href="https://wa.me/5215579501249" class="btn whatsapp-button btn-lg mt-3"><i class="fab fa-whatsapp"></i> Contactar por WhatsApp</a>
+        <h2 class="mb-4">Contacto</h2>
+        <p>Puedes contactarnos a través de los siguientes medios:</p>
+        <p>Email: <a href="mailto:cd.mora.unam@gmail.com">cd.mora.unam@gmail.com</a></p>
+        <p>Teléfono: <a href="tel:+5215579501249">+52 1 55 7950 1249</a></p>
     </div>
 
     <!-- Footer -->
